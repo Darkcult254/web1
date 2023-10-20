@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles for fonts and colors */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    
+}
+
+/* Header styles */
+header {
+    background-color: #007BFF;
+    padding: 15px 0;
+    text-align: center;
+    
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero section styles */
+#hero {
+    background-image: url('img/header.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+/* About section styles */
+#about {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+/* Curriculum section styles */
+#curriculum {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+#curriculum ul {
+    list-style: none;
+}
+
+#curriculum ul li {
+    margin-bottom: 10px;
+}
+
+/* Instructors section styles */
+#instructors {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.instructor {
+    text-align: center;
+    margin: 20px;
+}
+
+.instructor img {
+    max-width: 40%;
+}
+
+/* Enroll section styles */
+#enroll {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 60px 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    header ul {
+        display: block;
+        text-align: center;
+    }
+
+    header ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .hero-content {
+        padding: 40px;
+    }
+
+    #about, #curriculum, #instructors, #enroll {
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+        color: #372ba5; /* Change text color to black */
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+}
+h1, h2, p {
+    padding: 20px; /* Adjust the padding as needed */
+}
+#curriculum {
+    padding: 10px; /* Add 10px of padding to the section */
+}
+
+#curriculum ul {
+    padding-left: 10px; /* Add 10px of padding to the left of the list items */
+}
+/* Header styles for the "enroll.html" page */
+.enroll-header {
+    background-color: #1e78d1;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.enroll-header ul {
+    list-style: none;
+}
+
+.enroll-header ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.enroll-header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Footer styles for the "enroll.html" page */
+.enroll-footer {
+    background-color: #0b0b0c;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+/* Enrollment form section styles */
+#enrollment-form {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#enrollment-form .container {
+    text-align: center;
+}
+
+#enrollment-form h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#enrollment-form p {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#enrollment-form form {
+    margin-top: 20px;
+}
+
+#enrollment-form label {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+}
+
+#enrollment-form input[type="text"],
+#enrollment-form input[type="email"],
+#enrollment-form input[type="tel"],
+#enrollment-form textarea {
+    width: 10%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+#enrollment-form button {
+    background-color: #1e1eb9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#enrollment-form button:hover {
+    background-color: #444e58;
+}
+/* Apply styles only to elements within the #contact section */
+#contact {
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  #contact h2 {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  #contact form {
+    margin: 0;
+  }
+  
+  #contact label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact textarea {
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #contact button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #contact button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+ 
