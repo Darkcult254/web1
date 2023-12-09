@@ -1,0 +1,94 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the topbar */
+#topbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#logo {
+    margin-left: 20px;
+}
+
+#logo a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#contact-icons {
+    margin-right: 20px;
+}
+
+#contact-icons a {
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Styling for the header */
+#header {
+    background: white;
+    padding: 10px 0;
+    position: fixed;
+    top: 0px; /* Adjusted top position to create space below the topbar. was 60 */
+    width: 100%;
+    z-index: 999; /* Adjusted z-index to make it appear below topbar */
+}
+
+#nav ul {
+    background: white;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px 0;
+    list-style: none;
+    margin: 0;
+}
+
+#nav ul li {
+    margin: 0 5px;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    transition: color 0.3s, box-shadow 0.3s;
+}
+
+#nav ul li a:hover {
+    color: whitesmoke; /* Change the color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #topbar {
+        padding: 10px 0;
+    }
+    #contact-icons {
+        margin-right: 10px;
+    }
+    #nav ul {
+        gap: 20px;
+    }
+    #nav ul li {
+        margin: 0;
+    }
+}
+
+

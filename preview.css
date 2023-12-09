@@ -1,0 +1,38 @@
+/* Container for the entire page */
+.page-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+/* Container styles */
+.article-container {
+    width: 500px;
+    height: inherit;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ddd4d4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Article box styles */
+.article-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Add more custom styles as needed */
+
+/* Additional style to move article-container to the right */
+.move-right {
+    margin-left: auto;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}

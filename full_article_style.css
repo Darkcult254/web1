@@ -1,0 +1,66 @@
+/* Reset default margin and padding */
+body, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Apply styles to the article container */
+.article-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the article title */
+.article-title {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Style the article content */
+.article-content {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #666;
+   
+}
+
+/* Style links */
+.article-content a {
+    color: #0077FF;
+    text-decoration: none;
+}
+
+/* Style images */
+.article-content img {
+    max-width: 100%;
+    height: auto;
+}
+/* Apply styles to images */
+img {
+    max-width: 70%; /* Make images responsive */
+    height: auto; /* Maintain image aspect ratio */
+    border-radius: 2px; /* Add a rounded border */
+    display: block; /* Remove default inline behavior */
+    margin: 0 auto; /* Center images horizontally */
+}
+
+/* Apply styles to videos */
+video {
+    max-width: 70%; /* Make videos responsive */
+    height: auto; /* Maintain video aspect ratio */
+    border-radius: 2px; /* Add a rounded border */
+    display: block; /* Remove default inline behavior */
+    margin: 0 auto; /* Center videos horizontally */
+}
+
+/* Adjust the size of images and videos based on your needs */
+
+

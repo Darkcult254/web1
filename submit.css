@@ -1,0 +1,137 @@
+.container {
+    max-width: 600px !important;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+
+}
+h1 h2 h3{
+    font-size: 18px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style for uploaded media */
+.uploaded-media {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style for uploaded media container */
+.media-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.uploaded-media {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for uploaded media container */
+.media-container {
+text-align: center;
+margin-bottom: 15px;
+}
+
+/* Style for uploaded media (both images and videos) */
+.uploaded-media {
+max-width: 100%;
+height: auto;
+}
+.container {
+max-width: 600px;
+margin: 0;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background-color: #f9f9f9;
+
+}
+/* Additional CSS styles */
+.media-container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 10px;
+text-align: center;
+}
+
+.uploaded-media {
+max-width: 100%;
+max-height: 200px; /* Adjust the maximum height as needed */
+margin: 0 auto;
+}
+
+/* Add border-radius for video containers */
+.uploaded-media[type="video"] {
+border-radius: 15px;
+}

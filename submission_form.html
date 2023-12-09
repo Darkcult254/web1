@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+/* Style for images */
+#mediaPreview img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for videos */
+#mediaPreview video {
+    max-width: 100%;
+    height: auto;
+}
+
+
+    </style>
+    <link rel="stylesheet" href="admin_panel.css"> 
+    <link rel="stylesheet" href="submit.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <h3 style="text-align: center;">CREATE & POST</h3>
+        <form action="submit_article.php" method="POST" enctype="multipart/form-data">
+            <label for="title">Title:</label>
+            <input type="text" name="title" required><br>
+        
+            <!-- Correct the name attribute to "media" -->
+            <label for="media">Media Upload:</label>
+            <input type="file" name="multimedia" accept="image/*,video/*" multiple><br>
+        
+            <!-- Display the uploaded media at the top of the article -->
+            <div id="mediaPreview"></div>
+        
+            <label for="content">Content:</label><br>
+        
+            <!-- Textarea for content -->
+            <textarea name="content" rows="50" required></textarea><br>
+        
+            <label for="author">Author:</label>
+            <input type="text" name="author" required><br>
+        
+            <!-- Add a category selection field (dropdown menu) with the requested categories -->
+            <label for="category">Category:</label>
+            <select name="category" required>
+                <option value="BLOG">BLOG</option>
+                <option value="NEWS">NEWS</option>
+                <option value="SPORTS">SPORTS</option>
+                <option value="TECH">TECH</option>
+                <option value="BUSINESS">BUSINESS</option>
+                <option value="ACADEMIA">ACADEMIA</option>
+                <option value="CODEBIN">CODEBIN</option>
+                <option value="TERMS AND CONDITIONS">TERMS AND CONDITIONS</option>
+            </select><br>
+        
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+    <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_FILES["media"]) && is_array($_FILES["media"]["name"])) {
+        $mediaPreview = "<div id='mediaPreview'>";
+        for ($i = 0; $i < count($_FILES["media"]["name"]); $i++) {
+            $fileType = $_FILES["media"]["type"][$i];
+            $fileURL = "path/to/your/uploaded/files/" . $_FILES["media"]["name"][$i]; // Adjust the path as needed
+
+            if ($fileType && $fileURL) {
+                if (strpos($fileType, "image/") === 0) {
+                    // Handle image preview
+                    $mediaPreview .= "<img src='" . $fileURL . "' alt='Image " . ($i + 1) . "'>";
+                } elseif (strpos($fileType, "video/") === 0) {
+                    // Handle video preview
+                    $mediaPreview .= "<video controls='controls' width='320' height='240'><source src='" . $fileURL . "' type='" . $fileType . "'></video>";
+                }
+            }
+        }
+        $mediaPreview .= "</div>";
+        echo $mediaPreview;
+    }
+}
+?>
+
+    
+</body>
+</html>
+
+<style>
+.container {
+    max-width: 700px !important;
+}
+
+#mediaPreview {
+    text-align: center;
+}
+
+#mediaPreview img, #mediaPreview video {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+</style>

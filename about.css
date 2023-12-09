@@ -1,0 +1,115 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 40% !important;
+    background-color:#FFFFFF !important;
+    color: #070707;
+    padding: 50px !important;
+}
+
+/* Style the sidebar but exclude the footer */
+.sidebar:not(.footer) {
+    /* Add styles here for the body content */
+}
+
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.sidebar-list {
+    list-style: none;
+}
+
+.sidebar-list li {
+    margin-bottom: 10px;
+}
+
+.content {
+    width: 80%;
+    padding: 20px;
+}
+
+
+
+.about h1 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.about-list {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Specific CSS for the name fields */
+.name-field {
+    display: flex;
+    align-items: center;
+}
+
+.name-field label {
+    width: 80px; /* Adjust the label width to provide enough space */
+}
+
+.name-field input {
+    margin-top: 10px;
+    width: 15%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+/* Specific CSS for the email field */
+#email {
+    margin-top: 10px;
+    width: 15%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Specific CSS for the message textarea */
+#message {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px; /* Adjust the margin for consistency */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 100px;
+}
+
+/* Specific CSS for the placeholder in the textarea */
+#message::placeholder {
+    color: #999; /* Adjust the placeholder text color */
+}
+
+/* Specific CSS for the submit button */
+.submit-button {
+    background-color: #a89a9a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    background-color: #d6c1c1;
+}
