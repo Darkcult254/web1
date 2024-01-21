@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Search Articles</title>
+
+    <style>
+        body {
+            font-family: 'Raleway', Arial, sans-serif; /* Added Raleway font */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body style="font-family: 'Raleway', Arial, sans-serif; margin: 0; padding: 0; box-sizing: border-box;">
+
+<div class="container" style="max-width: 800px; margin: 0 auto; padding: 20px;">
+    <form method="post" action="search_results.php">
+        <div class="custom-search-bar" id="search-bar" style="width: 100%; overflow: hidden; transition: width 0.3s; display: flex;">
+            <input type="text" class="form-control" placeholder="Search..." name="search" onfocus="toggleSearchBar()" style="flex: 1; border: none; outline: none; transition: border-bottom 0.3s; padding: 10px; box-sizing: border-box; font-family: 'Raleway', Arial, sans-serif;">
+            <button class="btn btn-outline-primary" type="submit" style="border: none; outline: none; transition: opacity 0.3s; padding: 10px; box-sizing: border-box; background-color: #d7dde4; color: #080808; cursor: pointer; font-family: 'Raleway', Arial, sans-serif;">Search</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
